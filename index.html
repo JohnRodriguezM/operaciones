@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Formulas Js</title>
+</head>
+<body>
+    <header>
+        <div class = "header-container1">
+            <picture>
+                <img src="./assets/iconos/robots.png" alt="">
+            </picture>
+            <h1>
+                I'm a mathematic robot, my name is RmX 👋
+            </h1>
+        </div>
+        <div>
+            <div class = "header-container2">
+                <h2>Quizas esto sea de tu interes</h2> 
+            
+            <select name="aprendizaje" id="header_select">
+                <option value="mate" >Let's do it</option>
+                <option value="mate">Matemáticas básicas</option>
+                <option value="trucos">Trucos matemáticos</option>
+                <option value="area">Áreas de las figuras</option>
+                <option value="perimetros">Perimetros de las figuras</option>
+                <option value="factorizacion">Factorizando</option>
+            </select>
+        </div>
+            <div class = "header_ul-pc">
+                <ul>
+                    <li><a href="">Matemáticas básicas</a></li>
+                    <li><a href="">Trucos matemáticos</a></li>
+                    <li><a href="">Perimetros de las figuras</a></li>
+                    <li><a href="">Perimetros de las figuras</a></li>
+                </ul>
+            </div>
+           
+        
+        </div>
+    </header>
+
+
+
+    <main>
+        <h2>operaciones aritmeticas</h2>
+        <form action="">
+        <div class = "form_container-1-2">
+            <div>
+            <label for="numero1">Número 1:
+                <input type="number" id = "numero1" name="numero1" required />
+            </label> <br> <br>
+            </div>
+
+
+
+            <div>
+            <label for="numero2">Número 2:
+                <input type="number" id = "numero2" name="numero2" required/>
+            </label> <br><br>
+            </div>
+        </div>
+
+
+
+
+            <label for="cajaChequeoSuma" class = "labels">
+                <input type="checkbox" name="" id="cajaChequeoSuma" onclick ="sumaNumeros()">Sumar
+                <textarea name="" id="numero3" cols="20" rows="1"></textarea>
+            </label> <br> <br>
+
+
+
+
+            <label for="cajaChequeoResta" class = "labels">
+                <input type="checkbox" name="" id="cajaChequeoResta" onclick = "restaNumeros()"> Resta
+                <textarea name="" id="numero4" cols="20" rows="1"></textarea>
+            </label> <br><br>
+
+
+
+
+            <label for="cajaChequeoMultiplicacion" class = "labels">
+                <input type="checkbox" name="" id="cajaChequeoMultiplicacion" onclick = "multiplicaNumeros()"> Multiplica
+                <textarea name="" id="numero5" cols="16" rows="1"></textarea>
+            </label> <br><br>
+
+
+
+            <label for="cajaChequeoDivision" class = "labels">
+                <input type="checkbox" name="" id="cajaChequeoDivision" onclick = "divideNumeros()"> Dividir
+                <textarea name="" id="numero6" cols="18" rows="1"></textarea>
+            </label> <br><br>
+
+
+
+            <label for="cajaChequeoFactorial" class = "labels">
+                <input type="checkbox" name="" id="cajaChequeoFactorial" onclick = "factorialNumero1()"/> Factorial # 1
+                <textarea name="" id="numero7" cols="13" rows="1"></textarea>
+            </label> <br><br>
+
+            <label for="cajaChequeoFactorial" class = "labels">
+                <input type="checkbox" name="" id="cajaChequeoFactorial" onclick = "factorialNumero2()"/> Factorial # 2
+                <textarea name="" id="numero8" cols="13" rows="1"></textarea>
+            </label> <br><br>
+
+            <input type="reset" value="Reinicia los valores">
+
+
+        </form>
+
+
+
+
+        <h2>
+            Operacion geométricas
+        </h2>
+        <form action="">
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
