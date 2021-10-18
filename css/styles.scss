@@ -5,16 +5,19 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    
 }
 html{
     font-size: 1rem;
+    max-width: 850px;
+    background-color:darkgrey;
 }
 header{
     /*display:grid;
     grid-template-columns: 50% 50%;*/
     padding-top: 15px;
     padding-bottom: 25px;
-    background: linear-gradient(270deg, #00ffff 0, #00ffff 16.67%, #00fcff 33.33%, #38d3ff 50%, #48acd2 66.67%, #4c8baa 83.33%, #496e86 100%);
+    /*background: linear-gradient(270deg, #00ffff 0, #00ffff 16.67%, #00fcff 33.33%, #38d3ff 50%, #48acd2 66.67%, #4c8baa 83.33%, #496e86 100%);*/
     .header-container1{
         width: 95%;
         margin-left: auto;
@@ -46,7 +49,6 @@ header{
         background-position: center;
         appearance: none;
         outline: none;*/
-       
     }
     /*select:active,select:focus{
         width:100px;
@@ -57,10 +59,11 @@ header{
     }
 }
 
+
+
 main{
-    margin-left: auto;
-    margin-right: auto;
-    background: linear-gradient(90deg, #00ffff 0, #00ffff 16.67%, #00ffff 33.33%, #38d3ff 50%, #49a7cd 66.67%, #4c83a0 83.33%, #47647a 100%);
+   
+    /*background: linear-gradient(90deg, #00ffff 0, #00ffff 16.67%, #00ffff 33.33%, #38d3ff 50%, #49a7cd 66.67%, #4c83a0 83.33%, #47647a 100%);*/
     h2{
         padding-top: 25px;
         padding-bottom: 25px;
@@ -73,6 +76,10 @@ main{
         font-weight: 300;
     }
     form{
+        #numero1,#numero2{
+            width: 80%;
+            max-width: 250px;
+        }
         .form_container-1-2{
             display: grid;
             grid-template-columns: auto auto;
@@ -84,12 +91,32 @@ main{
             width: 320px;
             justify-content: space-evenly;
         }
-       
         input[type = "reset"]{
             margin-top: 25px;
             padding:7px;
             background-color:azure;
             border-radius: 10px;
+        }
+    }
+    .main-segundoFormulario{
+        padding-bottom: 50px;
+        .container_internoform2{
+            display: grid;
+            grid-template-rows: auto auto auto;
+            
+            .containervalor{
+                margin-bottom: 20px;
+            }
+        }
+        p{
+            padding-bottom: 12px;
+            padding-top: 12px;
+        }
+        .alturaTriangulo{
+            p{
+                padding-top: 25px;
+                
+            }
         }
     }
 }

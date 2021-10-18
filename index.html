@@ -18,6 +18,7 @@
             </h1>
         </div>
         <div>
+            <!--
             <div class = "header-container2">
                 <h2>Quizas esto sea de tu interes</h2> 
             
@@ -30,6 +31,7 @@
                 <option value="factorizacion">Factorizando</option>
             </select>
         </div>
+        -->
             <div class = "header_ul-pc">
                 <ul>
                     <li><a href="">Matemáticas básicas</a></li>
@@ -38,90 +40,116 @@
                     <li><a href="">Perimetros de las figuras</a></li>
                 </ul>
             </div>
-           
-        
         </div>
     </header>
 
 
 
     <main>
-        <h2>operaciones aritmeticas</h2>
-        <form action="">
-        <div class = "form_container-1-2">
-            <div>
-            <label for="numero1">Número 1:
-                <input type="number" id = "numero1" name="numero1" required />
-            </label> <br> <br>
-            </div>
+        <section class="main-primerFormulario">
+            <form action="">
+                <h2>operaciones aritmeticas</h2>
+                <div class = "form_container-1-2">
+                    <div>
+                        <label for="numero1">Número 1:
+                            <input type="number" id = "numero1" name="numero1" required />
+                        </label> <br> <br>
+                    </div>
+
+                    <div>
+                        <label for="numero2">Número 2:
+                            <input type="number" id = "numero2" name="numero2" required/>
+                        </label> <br><br>
+                    </div>
+                </div>
+
+                <label for="cajaChequeoSuma" class = "labels">
+                    <input type="checkbox" name="" id="cajaChequeoSuma" onclick ="sumaNumeros()">Sumar
+                    <textarea name="" id="numero3" cols="20" rows="1"></textarea>
+                </label> <br> <br>
+
+                <label for="cajaChequeoResta" class = "labels">
+                    <input type="checkbox" name="" id="cajaChequeoResta" onclick = "restaNumeros()"> Resta
+                    <textarea name="" id="numero4" cols="20" rows="1"></textarea>
+                </label> <br><br>
+
+                <label for="cajaChequeoMultiplicacion" class = "labels">
+                    <input type="checkbox" name="" id="cajaChequeoMultiplicacion" onclick = "multiplicaNumeros()"> Multiplica
+                    <textarea name="" id="numero5" cols="16" rows="1"></textarea>
+                </label> <br><br>
+
+                <label for="cajaChequeoDivision" class = "labels">
+                    <input type="checkbox" name="" id="cajaChequeoDivision" onclick = "divideNumeros()"> Dividir
+                    <textarea name="" id="numero6" cols="18" rows="1"></textarea>
+                </label> <br><br>
+
+                <label for="cajaChequeoFactorial" class = "labels">
+                    <input type="checkbox" name="" id="cajaChequeoFactorial" onclick = "factorialNumero1()"/> Factorial # 1
+                    <textarea name="" id="numero7" cols="13" rows="1"></textarea>
+                </label> <br><br>
+
+                <label for="cajaChequeoFactorial" class = "labels">
+                    <input type="checkbox" name="" id="cajaChequeoFactorial" onclick = "factorialNumero2()"/> Factorial # 2
+                    <textarea name="" id="numero8" cols="13" rows="1"></textarea>
+                </label> <br><br>
+
+                <input type="reset" value="Reinicia los valores">
 
 
+            </form>
+        </section>
+        <hr style = "width:85%; margin-top: 15px;">
+        <section class="main-segundoFormulario">
+            <form id= "main-segundo_formulario" action="">
+                
+                <h2>Operacion geométricas</h2>
+                <p class = "parrafo_html">Averigua el perimetro y el area de un cuadrado</p>
+                <div class = "container_internoform2">
+                    <div class="containervalor">
+                    <label for="perimetroCuadrado">
+                        Cual es valor del lado:
+                        <input type="number" id = "numeroPerimetro_Area">
+                        <select name="opcionesPerimetroCuadrado" id="opcionesPerimetroCuadrado">
+                        </label>
+                            <option value="milimetros">milimetros</option>
+                            <option value="centimetros">centimetros</option>
+                            <option value="decimetros">decimetros</option>
+                            <option value="metros">metros</option>
+                            <option value="Kilometros">kilometros</option>
+                        </select>
+                    </div>
+                    <div class="containerbotones">
+                        <input type="button" value="averigua el petrimetro" onclick = "perimetroCuadrado()">
+                        <p id = "parrafoRespuestaPerimetro"></p>
+                        <input type="button" value="averigua el Area" onclick = "areaCuadrado()">
+                        <p id = "parrafoRespuestaArea" ></p>
+                    </div>
+                    <div class = "alturaTriangulo">
+                        <hr>
+                        <p>Averigua la altura del triangulo</p>
+                        <label for="">Pon el primer lado conocido:</label>
+                <input type="number" name="" id="alturaNumero1"> <br><br>
+                <label for="">Pon el segundo numero conocido:</label>
+                <input type="number" name="" id="alturaNumero2"> <br><br>
+                <select name="" id="medidasDelTrianguloOpciones">
+                    <option value="milimetros">milimetros</option>
+                    <option value="centimetros">centimetros</option>
+                    <option value="decimetros">decimetros</option>
+                    <option value="metros">metros</option>
+                    <option value="kilometros">kilometros</option>
+                </select> <br><br>
+                <input type="button" value="la altura del triangulo es de: " id = "butonAltutaTriangulo" onclick="alturaTriangulo()">
+                <p id = "alturaTrianguloParrafo"></p>
+                    </div>
 
-            <div>
-            <label for="numero2">Número 2:
-                <input type="number" id = "numero2" name="numero2" required/>
-            </label> <br><br>
-            </div>
-        </div>
-
-
-
-
-            <label for="cajaChequeoSuma" class = "labels">
-                <input type="checkbox" name="" id="cajaChequeoSuma" onclick ="sumaNumeros()">Sumar
-                <textarea name="" id="numero3" cols="20" rows="1"></textarea>
-            </label> <br> <br>
-
-
-
-
-            <label for="cajaChequeoResta" class = "labels">
-                <input type="checkbox" name="" id="cajaChequeoResta" onclick = "restaNumeros()"> Resta
-                <textarea name="" id="numero4" cols="20" rows="1"></textarea>
-            </label> <br><br>
-
-
-
-
-            <label for="cajaChequeoMultiplicacion" class = "labels">
-                <input type="checkbox" name="" id="cajaChequeoMultiplicacion" onclick = "multiplicaNumeros()"> Multiplica
-                <textarea name="" id="numero5" cols="16" rows="1"></textarea>
-            </label> <br><br>
-
-
-
-            <label for="cajaChequeoDivision" class = "labels">
-                <input type="checkbox" name="" id="cajaChequeoDivision" onclick = "divideNumeros()"> Dividir
-                <textarea name="" id="numero6" cols="18" rows="1"></textarea>
-            </label> <br><br>
-
-
-
-            <label for="cajaChequeoFactorial" class = "labels">
-                <input type="checkbox" name="" id="cajaChequeoFactorial" onclick = "factorialNumero1()"/> Factorial # 1
-                <textarea name="" id="numero7" cols="13" rows="1"></textarea>
-            </label> <br><br>
-
-            <label for="cajaChequeoFactorial" class = "labels">
-                <input type="checkbox" name="" id="cajaChequeoFactorial" onclick = "factorialNumero2()"/> Factorial # 2
-                <textarea name="" id="numero8" cols="13" rows="1"></textarea>
-            </label> <br><br>
-
-            <input type="reset" value="Reinicia los valores">
-
-
-        </form>
-
-
-
-
-        <h2>
-            Operacion geométricas
-        </h2>
-        <form action="">
-
-        </form>
+                </div>
+                <input type="reset" value="Reinicia los valores">
+            </form>
+        </section>
     </main>
+
+
+
     <footer>
 
     </footer>

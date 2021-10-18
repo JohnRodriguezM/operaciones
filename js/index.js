@@ -35,3 +35,33 @@ function factorialNumero2() {
     let factor2 = document.getElementById('numero8').innerHTML =  factorr;
     return factor2;
 }
+
+/*inicia operaciones geometricas*/
+
+let perimetro_Area_Cuadrado = document.getElementById('numeroPerimetro_Area');
+let selector = document.getElementById('opcionesPerimetroCuadrado')
+
+function perimetroCuadrado(){
+    let x = document.getElementById('parrafoRespuestaPerimetro').innerHTML = `El perimetro del cuadrado es igual a ${perimetro_Area_Cuadrado.value * 4} ${selector.value}`
+    return x;
+}
+function areaCuadrado(){
+    let x = document.getElementById('parrafoRespuestaArea').innerHTML = `El area del cuadrado es igual a ${perimetro_Area_Cuadrado.value**2} ${selector.value} cuadrados`
+    return x;
+}
+
+/*altura del triangulo*/ 
+let numeroUnoAltura = document.getElementById('alturaNumero1');
+let numeroDosAltura = document.getElementById('alturaNumero2')
+let medidas = document.getElementById('medidasDelTrianguloOpciones');
+
+
+
+function alturaTriangulo() {
+    let operacion = (Math.sqrt((numeroUnoAltura.value * numeroUnoAltura.value) + (numeroDosAltura.value * numeroDosAltura.value)))
+    operacion = operacion.toFixed(2);
+    let altura = document.getElementById('alturaTrianguloParrafo').innerHTML = "La altura del triangulo es igual a " + operacion  + ' ' + medidas.value;
+    
+    return altura;
+
+}
