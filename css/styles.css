@@ -9,16 +9,25 @@
 }
 
 html {
+  margin: 0;
   font-size: 1rem;
   max-width: 850px;
   background-color: darkgrey;
 }
 
 header {
-  /*display:grid;
-  grid-template-columns: 50% 50%;*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% 25%;
+  grid-template-columns: 75% 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 25px;
+  background-color: blue;
   /*background: linear-gradient(270deg, #00ffff 0, #00ffff 16.67%, #00fcff 33.33%, #38d3ff 50%, #48acd2 66.67%, #4c8baa 83.33%, #496e86 100%);*/
   /*select:active,select:focus{
       width:100px;
@@ -26,17 +35,23 @@ header {
   }*/
 }
 header .header-container1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
-header .header-container1 img {
-  width: 80px;
+header .header-container1 .robot {
+  margin-left: -25px;
+  width: 50px;
 }
 header .header-container1 h1 {
+  margin: 0;
+  margin-left: -25px;
   padding-top: 15px;
   padding-bottom: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 header .header-container2 h2 {
   padding-top: 15px;
@@ -61,7 +76,7 @@ main {
   /*background: linear-gradient(90deg, #00ffff 0, #00ffff 16.67%, #00ffff 33.33%, #38d3ff 50%, #49a7cd 66.67%, #4c83a0 83.33%, #47647a 100%);*/
 }
 main h2 {
-  padding-top: 25px;
+  padding-top: 105px;
   padding-bottom: 25px;
   text-transform: uppercase;
   font-size: 1.5rem;
